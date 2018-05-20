@@ -8,17 +8,5 @@ import { empty } from 'rxjs';
 })
 export class AppComponent {
   title = 'app';
-  x;
- y;
-addnum  = '';
- add() {
-   this.addnum = "" + ((+this.x) + (+this.y));
-   
- }
- addtrue(){
-   if (this.addnum)
-   return true;
-   else
-   return false;
- }
+  
 }
