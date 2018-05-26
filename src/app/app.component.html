@@ -1,2 +1,20 @@
 <p class="def">I am in component</p>
 
+
+<p [style.color] = "'green'"> This is single styling </p>
+
+<p [class.mycolor] = "'true'"> This is single class styling </p>
+
+<p [ngClass] = 'configObject'> This is multiple class styling </p>
+
+<p [ngStyle] = 'configObject1'> This is multiple Style styling </p>
+
+
+
+<div *ngFor = "let x of path; let i=index"> 
+       
+    <img [src] = "x">   
+
+    <button type="button" (click)='onoff(i)'> {{butoff}} </button>
+    
+</div>
