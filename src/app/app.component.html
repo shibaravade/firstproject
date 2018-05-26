@@ -1,2 +1,8 @@
 <p class="def">I am in component</p>
 
+<li *ngFor = "let b of booksget"> 
+    {{b}}
+</li>
+
+<input type=text [(ngModel)]='mybook'>
+<button (click) = 'addBooks(mybook)'> Add </button>

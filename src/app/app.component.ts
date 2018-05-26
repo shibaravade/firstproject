@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { empty } from 'rxjs';
+import { LibraryService } from './library.service';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,14 @@ import { empty } from 'rxjs';
 export class AppComponent {
   title = 'app';
   
+  constructor(private lib:LibraryService) {
+
+  }
+
+  booksget = this.lib.books;
+  newbooks;
+  addBooks(a) {
+  this.newbooks = this.booksget.push(a);
+  
+  }
 }
