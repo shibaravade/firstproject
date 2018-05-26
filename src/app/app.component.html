@@ -9,9 +9,9 @@
     </p>
 
     <img src = "/src/assets/bulboff.png"> 
-    <div *ngFor = "let x of path"> 
+    <div *ngFor = "let x of path; let i=index"> 
        
         <img [src]="/assets/bulboff.png">    
-        <imput value="{{value}}" type="button" (click)='onoff(x)'> </button>
+        <imput value="{{value}}" type="button" (click)='onoff(i)'> </button>
         
     </div>
