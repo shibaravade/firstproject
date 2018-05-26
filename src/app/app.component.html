@@ -1,2 +1,17 @@
 <p class="def">I am in component</p>
 
+<app-myfirst-component></app-myfirst-component>
+
+
+<p *ngFor = " let weekday of weekdays ; let i=index" >
+   {{i+1}} : {{weekday}}
+
+    </p>
+
+    <img src="../assets/bulboff.png"> 
+    <div *ngFor = "let x of path"> 
+       
+        <img [src]="/assets/bulboff.png">    
+        <imput value="{{value}}" type="button" (click)='onoff(x)'> </button>
+        
+    </div>
