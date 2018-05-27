@@ -1,0 +1,12 @@
+<p>
+  parent works!
+</p>
+<app-child #refchild></app-child>
+
+<app-child-input [igotochild] = 'iamparentproperty' [sendtochild] = 'iamparentproperty2'></app-child-input>
+
+<app-child-output (callfromparent)='parentoutput()'> </app-child-output>
+
+{{refchild.child}} : coming from child property
+
+<button (click)='refchild.childmethod()'> click </button>
