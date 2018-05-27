@@ -17,7 +17,7 @@ export class AppComponent {
   booksget = this.lib.books;
   newbooks;
   addBooks(a) {
-  this.newbooks = this.booksget.push(a);
+  this.newbooks = this.lib.books.push(a);
   
   }
 }
