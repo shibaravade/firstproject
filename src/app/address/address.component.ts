@@ -14,4 +14,9 @@ export class AddressComponent implements OnInit {
   ngOnInit() {
   }
 
+  run()
+  {
+    alert(this.personpincode);
+  }
+
 }
