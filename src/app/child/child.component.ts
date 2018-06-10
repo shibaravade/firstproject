@@ -23,7 +23,7 @@ x = setInterval(() => { this.counter++; }, 1000);
 y;
 
 run() {
-  this.counterfunction.emit('this.counter');
+  this.counterfunction.emit(this.counter);
  }
 
 
