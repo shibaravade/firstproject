@@ -1,8 +1,6 @@
 <p>
   parent works!
 </p>
-<app-child #ref> </app-child>
+<app-child (counterfunction) = 'run()'> </app-child>
+{{y}}
 
-<button (click) = 'ref.run()' [(ngModel)] = 'ref.y'> Click </button>
-
-<p> </p>

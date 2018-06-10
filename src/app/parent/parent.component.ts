@@ -12,4 +12,10 @@ export class ParentComponent implements OnInit {
   ngOnInit() {
   }
 
+
+y ;
+  run(counter) {
+    return this.y = counter;
+   }
+  
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Output, EventEmitter } from '@angular/core';
 
 
 @Component({
@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent implements OnInit {
+  @Output() counterfunction = new EventEmitter();
 
   constructor() {
     
@@ -20,11 +21,10 @@ export class ChildComponent implements OnInit {
   
 x = setInterval(() => { this.counter++; }, 1000); 
 y;
+
 run() {
- var y = this.counter;
-
-}
-
+  this.counterfunction.emit('this.counter');
+ }
 
 
 }
