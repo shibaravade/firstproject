@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { DefaultComponent } from './default/default.component';
+import { AppRoutingModule } from './app\u009Frouting/app\u009Frouting.module';
 
 @NgModule({
   declarations: [
@@ -19,11 +20,11 @@ import { DefaultComponent } from './default/default.component';
     AboutComponent,
     ContactComponent,
     DefaultComponent
-   
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
