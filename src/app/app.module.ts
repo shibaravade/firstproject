@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { DefaultComponent } from './default/default.component';
-import { AppRoutingModule } from './app\u009Frouting/app\u009Frouting.module';
+import { AapproutingModule } from './aapprouting/aapprouting.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,7 @@ import { AppRoutingModule } from './app\u009Frouting/app\u009Frouting.module';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AapproutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
