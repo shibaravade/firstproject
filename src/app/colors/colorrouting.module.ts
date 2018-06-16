@@ -6,8 +6,12 @@ import { GreenComponent } from './green/green.component';
 
 
 const routes : Routes = [
-  {path : 'red', component: RedComponent},
+  { path : 'colors' , 
+  children: [ 
+  { path: 'red', component: RedComponent},
   {path : 'green', component: GreenComponent}
+]
+  }
 ];
 
 @NgModule({
