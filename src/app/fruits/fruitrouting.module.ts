@@ -6,13 +6,8 @@ import { BananaComponent } from './banana/banana.component';
 
 
 const routes : Routes = [
-{
-  path : 'fruits', children: [
-{path : 'apple' , component : AppleComponent},
-{path : 'banana' , component : BananaComponent},
-{path : '' , component : AppleComponent}
-]
-}
+{ path : 'apple' , component : AppleComponent },
+{ path : 'banana', component : BananaComponent }
 ];
 
 @NgModule({

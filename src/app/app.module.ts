@@ -20,7 +20,6 @@ import { ApproutingModule } from './approuting.module';
     Feature1Module,
     Feature2Module,
     Feature3Module,
-    FruitsModule,
     ColorsModule,
     ApproutingModule
   ],
