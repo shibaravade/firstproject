@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-red',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RedComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
+
+  id : number;
 
   ngOnInit() {
+  }
+
+ 
+  runid() {
+    this.router.navigate(['/colors/green', this.id]); 
   }
 
 }

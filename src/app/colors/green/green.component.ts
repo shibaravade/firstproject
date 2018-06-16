@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-green',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GreenComponent implements OnInit {
 
-  constructor() { }
+  
+  myparams = {};
+constructor ( private route : ActivatedRoute) {
+  this.route.params.subscribe(params => this.myparams = params);
+}
+
 
   ngOnInit() {
   }

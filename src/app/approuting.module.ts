@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { GreenComponent } from './colors/green/green.component';
 
 
 
 
 const routes: Routes = [
-  { path : 'fruits', loadChildren : './fruits/fruits.module#FruitsModule' }
+  { path : 'fruits', loadChildren : './fruits/fruits.module#FruitsModule' },
+
 ];
 
 @NgModule({

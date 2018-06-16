@@ -10,10 +10,13 @@ export class AppleComponent implements OnInit {
 
   constructor(private router : Router) { }
 
+
+
   ngOnInit() {
   }
 
   run() {
-    this.router.navigate(['/fruits/banana']);  
+    this.router.navigate(['/fruits/banana']); 
+  }
 
 }
