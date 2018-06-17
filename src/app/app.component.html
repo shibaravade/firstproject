@@ -1,2 +1,7 @@
 <p class="def">I am in component</p>
 
+<button (click) = 'showData(); show=true'>Get data</button>
+<br/><br/>
+<button (click) = 'setData(); show=true'>Post data</button>
+<p *ngIf = 'show'>{{data | json}}</p>
+
