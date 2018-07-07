@@ -11,20 +11,20 @@ export class AppComponent {
 
   configObject = {'myclass1':'false', 'myclass2':'true'};
   configObject1 = {'border':'1px solid blue', 'color':'black'}
-  butoff ="On";
-  butno = "on";
+  butoff =['Off','Off','Off','Off','Off'];
+  
  path = ["../assets/bulboff.png","../assets/bulboff.png","../assets/bulboff.png","../assets/bulboff.png","../assets/bulboff.png"]; 
  
  onoff(x) {
     if(this.path[x] ==  "../assets/bulboff.png" ) {
       this.path[x] = "../assets/bulbon.png";
-      this.butoff = "Off";
+      this.butoff[x] = "Off";
     }
    
     else
     {
       this.path[x] = "../assets/bulboff.png";
-      this.butoff = "On";
+      this.butoff[x] = "On";
     }
   }
 

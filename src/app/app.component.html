@@ -14,7 +14,6 @@
 <div *ngFor = "let x of path; let i=index"> 
        
     <img [src] = "x">   
-
-    <button type="button" (click)='onoff(i)'> {{butoff}} </button>
+    <button type="button" (click)='onoff(i)'> {{butoff[i]}} </button>
     
 </div>
